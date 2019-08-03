@@ -1,0 +1,8 @@
+01get_scripts.sh
+用来整理一个目录下的所有sql文件
+归并到temp文件夹中
+给所有文件排序，加上数字前缀
+02del_prefix.sh
+删除temp文件夹下所有文件的数字前缀
+03add_prefix.sh
+重新给所有文件排序，加上数字前缀
