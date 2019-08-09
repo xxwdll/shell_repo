@@ -1,6 +1,7 @@
 #!/bin/bash
 #date 190809
 #email gqoyvf@163.com
+#info https://www.jianshu.com/p/457fb0356a09
 export this_log=$1
 line_last=1
 i=1
