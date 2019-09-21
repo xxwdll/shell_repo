@@ -7,7 +7,7 @@ cp ./node-v10.16.3-linux-x64.tar /opt/
 cd /opt/ && tar -xvf node-v10.16.3-linux-x64.tar
 ln -s /opt/node-v10.16.3-linux-x64/bin/npm /usr/local/bin/
 ln -s /opt/node-v10.16.3-linux-x64/bin/node /usr/local/bin/
-npm install -g hexo-cli hexo-renderer-jade hexo-renderer-stylus
+npm install -g hexo-cli
 ln -s /opt/node-v10.16.3-linux-x64/lib/node_modules/hexo-cli/bin/hexo /usr/local/bin/
 mkdir /usr/blog && cd /usr
 hexo init blog
