@@ -20,5 +20,4 @@ git clone git@github.com:xxwdll/myblog.git /usr/blog/source/_posts
 firewall-cmd --add-port=4000/tcp --permanent
 firewall-cmd --reload
 bash /usr/blog/restart.sh
-IP=`ifconfig|sed -n '2p'|awk '{print $2}'`
 echo 'server has started!'
