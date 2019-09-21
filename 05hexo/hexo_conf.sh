@@ -21,7 +21,4 @@ firewall-cmd --add-port=4000/tcp --permanent
 firewall-cmd --reload
 bash /usr/blog/restart.sh
 IP=`ifconfig|sed -n '2p'|awk '{print $2}'`
-echo '
-server is start !
-you can now access the url:'
-echo ${IP}":4000"
+echo 'server has started!'
