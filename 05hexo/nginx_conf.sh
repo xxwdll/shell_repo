@@ -1,6 +1,9 @@
 #!/bin/bash
 cd /etc/nginx/
 mv nginx.conf nginx.conf~
+firewall-cmd --add-port=80/tcp --permanent
+firewall-cmd --add-port=80/udp --permanent
+firewall-cmd --reload
 echo 'user  nginx;
 worker_processes  1;
 
@@ -54,3 +57,5 @@ http {
         }
     }
 }' >nginx.conf
+nginx
+echo 'nginx 启动成功！'
