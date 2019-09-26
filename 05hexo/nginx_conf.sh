@@ -37,7 +37,7 @@ http {
     }
     server {
         listen  80 ;
-        server_name  xxwdll.top;
+        server_name  blog.xxwdll.top;
          
         location / {
             proxy_set_header X-Real-IP $remote_addr;
