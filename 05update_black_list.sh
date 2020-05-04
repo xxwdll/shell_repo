@@ -1,7 +1,7 @@
 #!/bin/bash
 # 写入到定时任务中，日志为/home/attack.log
 */2 * * * * bash /var/log/count.sh>>/home/attack.log
-# 每小时检查一次，ssh 登录失败大于3次，将该ip 加入黑名单
+# 每2分钟检查一次，ssh 登录失败大于3次，将该ip 加入黑名单
 cd /var/log
 last_hour=`date +'%b %_d %0k' --date='-1 hour'`
 this_day=`date +'%b %_d'`
