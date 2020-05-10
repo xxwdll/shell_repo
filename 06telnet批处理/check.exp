@@ -1,0 +1,20 @@
+#!/usr/bin/expect
+set timeout 30
+set this_ip [lindex $argv 0]
+set this_command [lindex $argv 1]
+spawn telnet $this_ip
+  expect "*login:*"
+  send "wdll\r"
+  expect "*assword*"
+  send "123456\r"
+  expect "*~$*"
+  send "su\r"
+  expect "Password:*"
+  send "123456789\r"
+  expect "*#*"
+  send "$this_command\r"
+  expect "*#*"
+  send "exit\r"
+  expect "*~$*"
+  send "exit\r"
+expect eof
